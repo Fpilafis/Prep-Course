@@ -58,6 +58,20 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  let array =  palabras[0]
+  for (let i=1; i<palabras.length; i++) {
+    array = array + ' ' + palabras [i]
+  }
+  return array
+}
+
+function dePalabrasAFras(palabras) {
+  // "palabras" es un array de strings/cadenas
+  // Devuelve un string donde todas las palabras estén concatenadas
+  // con espacios entre cada palabra
+  // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
+  // Tu código:
+  return palabras.join(' ');
 }
 
 
@@ -65,6 +79,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+
 }
 
 
