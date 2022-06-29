@@ -136,7 +136,7 @@ function multiplicarArgumentos() {
     return 0
   }
   var total = 1
-  for(i=0; i<arguments.length; i++ ){
+  for(let i=0; i<arguments.length; i++ ){
     total= total*arguments[i]
   }
   return total;
@@ -146,6 +146,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  var total = 0;
+  for(let i=0; i<arreglo.length; i++) {
+    if (arreglo[i]>19) {
+      total++
+    }
+  }
+  return total;
 }
 
 
