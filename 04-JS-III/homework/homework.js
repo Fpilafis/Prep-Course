@@ -239,18 +239,16 @@ function breakStatement(numero) {
   newarray=[]
   var suma = numero
   for(let i= 0; i<10; i++){ 
-    suma= suma + 2;
-    if(i==suma) break;
+    suma = suma + 2;
+    if(i === suma) {
+      return 'Se interrumpió la ejecución';
+      break;
+    }
     else{ 
       newarray.push(suma);
     }
   }
-  if (i<10){
-    return 'Se interrumpió la ejecución'
-  }
-  else {
-    return newarray
-  }
+  return newarray
 }
 
 
