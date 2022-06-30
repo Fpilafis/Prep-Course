@@ -236,6 +236,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  newarray=[]
+  var suma = numero
+  for(let i= 0; i<10; i++){ 
+    suma= suma + 2;
+    if(i==suma) break;
+    else{ 
+      newarray.push(suma);
+    }
+  }
+  if (i<10){
+    return 'Se interrumpió la ejecución'
+  }
+  else {
+    return newarray
+  }
 }
 
 
