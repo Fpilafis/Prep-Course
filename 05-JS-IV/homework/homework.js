@@ -67,7 +67,6 @@ function tieneEmail (usuario) {
   // De lo contratio, devuelve "false"
   // Tu código:
   return usuario.email != null;
-
 }
 
 function tienePropiedad (objeto, propiedad) {
@@ -75,6 +74,12 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (objeto[propiedad]) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function verificarPassword (usuario, password) {
