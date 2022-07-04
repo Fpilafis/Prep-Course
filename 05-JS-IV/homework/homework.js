@@ -87,12 +87,7 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(usuario[password]) {
-    return true;
-  }
-  else {
-    return false;
-  }
+  return usuario['password']=== password
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
@@ -108,6 +103,8 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+  usuario.amigos.push(nuevoAmigo);
+  return usuario;
 }
 
 function pasarUsuarioAPremium (usuarios) {
